@@ -6,3 +6,6 @@ package-lock.json
 
 # ignore config.js
 config.js
+
+# .env for secrets
+.env
