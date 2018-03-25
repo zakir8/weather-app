@@ -1,4 +1,4 @@
-#Weather app with NodeJS
+# Weather app with NodeJS
 
 Note: In order for this to work, fill in the Google maps api key and forecast.io key in `.env` file. Both can be found for free.
 
