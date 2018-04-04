@@ -2,7 +2,6 @@ const request = require('request');
 
 function getWeather(lat, long, callback) {
     console.log("Forecast API : ", process.env.FORECAST_TOKEN);
-    debugger;
     encodedPart = encodeURIComponent(`${lat}` + ',' + `${long}`);
     encodedURL = `https://api.darksky.net/forecast/${process.env.FORECAST_TOKEN}/${encodedPart}`;
     request({

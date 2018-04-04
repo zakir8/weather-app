@@ -19,13 +19,11 @@ const argv = yargs
     .argv;
 
 geocode.geocodeAddress(argv.address, (errorMessage, results) => {
-    debugger;
     if (errorMessage) {
         console.log(errorMessage);
     } else if (results) {
         console.log(`Address: ${results.address}`)
         weather.getWeather(results.latitude, results.longitude, (error, response) => {
-            debugger;
             if (error) {
                 console.log(errorMessage);
             } else if (response) {

@@ -5,7 +5,6 @@ const request = require('request');
 //// The second argument for a success object
 function geocodeAddress(address, callback) {
     console.log("Google API key: ", process.env.GOOGLE_MAPS_TOKEN);
-    debugger;
     request({
         url: `https://maps.googleapis.com/maps/api/geocode/json?key=${process.env.GOOGLE_MAPS_TOKEN}&address=${encodeURIComponent(address)}`,
         json: true
